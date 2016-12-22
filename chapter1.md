@@ -141,3 +141,55 @@ f("b")
 
 
 ```
+
+--- type:NormalExercise lang:r xp:100 skills:1 key:69cbf4cfc4
+## Control Tests (1)
+
+#### pass
+
+```
+for (jj in 1:10) if (jj > 1) jj else 0
+```
+
+#### fail 1 - "bad cond test"
+
+```
+for (jj in 1) if (jj > 1) jj else 0
+```
+
+#### fail 2 - "no inner if"
+
+```
+for (ii in 1:10) ii
+```
+
+#### fail 3 - "bad if cond"
+
+```
+for (ii in 1:10) if (ii > 1000) ii else 0
+```
+
+#### fail 4 - "no else cond"
+
+```
+for (ii in 1:10) if (ii > 1) ii
+```
+
+*** =pre_exercise_code
+```{r}
+
+```
+
+*** =sample_code
+```{r}
+for (ii in 1:10) if (ii > 1) ii else 0
+```
+
+*** =solution
+```{r}
+for (ii in 1:10) if (ii > 1) ii else 0
+```
+
+*** =sct
+```{r}
+```
