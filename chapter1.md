@@ -4,6 +4,81 @@ description : Insert the chapter description here
 attachments :
   slides_link : https://s3.amazonaws.com/assets.datacamp.com/course/teach/slides_example.pdf
 
+--- type:NormalExercise lang:r xp:100 skills:1 key:31ea872ce2
+## Simple tests (1)
+
+#### pass 1
+
+```
+library('zoo')
+
+x <- zoo(1:3)
+
+print(x)
+```
+
+#### pass 2
+
+```
+library(zoo)
+
+x <- y <- zoo(1:3)
+
+print(y)
+```
+
+#### fail 1 - "x is not class 'zoo'"
+
+```
+library(zoo)
+
+x = c(1,2,3)
+
+print(x)
+```
+
+#### fail 3 - "x is undefined"
+
+```
+library(zoo)
+```
+
+#### fail 4 - "Expected [1,2,3] in your output"
+
+```
+library(zoo)
+
+x <- zoo(1:3)
+```
+
+
+*** =pre_exercise_code
+```{r}
+
+```
+
+*** =sample_code
+```{r}
+library(zoo)
+
+x <- zoo(1:3)
+
+print(x)
+```
+
+*** =solution
+```{r}
+library(zoo)
+
+x <- zoo(1:3)
+
+print(x)
+```
+
+*** =sct
+```{r}
+```
+
 --- type:NormalExercise lang:r xp:100 skills:1 key:86f183628a
 ## Simple tests (2)
 
