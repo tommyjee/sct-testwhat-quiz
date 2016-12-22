@@ -193,3 +193,50 @@ for (ii in 1:10) if (ii > 1) ii else 0
 *** =sct
 ```{r}
 ```
+
+--- type:NormalExercise lang:r xp:100 skills:1 key:72a629a74f
+## Data Objects
+
+#### pass
+
+```
+d <- transform(d, ttl = x + y)
+```
+
+#### fail 1 - "d is undefined"
+
+```
+rm('d')
+```
+
+#### fail 2 - "bad value for ttl"
+
+```
+d$ttl <- d$x
+```
+
+#### fail 3 - "missing col y"
+
+```
+d$ttl <- d$x + d$y
+d$y <- NULL
+```
+
+*** =pre_exercise_code
+```{r}
+d <- data.frame(x=1:10, y=11:20)
+```
+
+*** =sample_code
+```{r}
+d$ttl <- d$x + d$y
+```
+
+*** =solution
+```{r}
+d$ttl <- d$x + d$y
+```
+
+*** =sct
+```{r}
+```
