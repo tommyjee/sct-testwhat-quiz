@@ -240,3 +240,53 @@ d$ttl <- d$x + d$y
 *** =sct
 ```{r}
 ```
+
+--- type:NormalExercise lang:r xp:100 skills:1 key:631d01c691
+## Function Definition
+
+#### pass 1
+
+```
+f <- function(x, y, z=1) sum(x + y, z)
+```
+
+#### fail 1 - "missing 3rd arg"
+
+```
+f <- function(a, b) sum(a + b)
+```
+
+#### fail 2 - "no + operator"
+
+```
+f <- function(a, b, c=1) sum(a,b,c)
+```
+
+#### fail 3 - "no sum call"
+
+```
+f <- function(a, b, c=1) a + b + c
+```
+
+*** =instructions
+
+*** =hint
+
+*** =pre_exercise_code
+```{r}
+
+```
+
+*** =sample_code
+```{r}
+f <- function(a, b, c=1) sum(a + b, c)
+```
+
+*** =solution
+```{r}
+f <- function(a, b, c=1) sum(a + b, c)
+```
+
+*** =sct
+```{r}
+```
