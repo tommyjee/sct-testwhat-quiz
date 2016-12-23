@@ -402,3 +402,35 @@ f(3)
 ```{r}
 
 ```
+
+--- type:NormalExercise lang:r xp:100 skills:1 key:63a3e749d5
+## Shenanigans
+
+_note_: you may need to refresh exercise between submissions.
+
+#### Fails 1 - "echo should be false"
+
+```
+x <- opts_chunk$get('echo')
+```
+
+*** =pre_exercise_code
+```{r}
+library(knitr)
+```
+
+*** =sample_code
+```{r}
+opts_chunk$set(echo = FALSE)
+x <- opts_chunk$get('echo')
+```
+
+*** =solution
+```{r}
+opts_chunk$set(echo = FALSE)
+x <- opts_chunk$get('echo')
+```
+
+*** =sct
+```{r}
+```
