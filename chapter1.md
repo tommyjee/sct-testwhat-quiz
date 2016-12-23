@@ -324,3 +324,54 @@ lm(x ~ y, data=d)
 *** =sct
 ```{r}
 ```
+
+--- type:NormalExercise lang:r xp:100 skills:1 key:2564475b6e
+## Logic Test
+
+#### pass - 
+
+```
+x <- mean(1:3)
+lkjsdf
+```
+
+#### fail 1 - "error in code"
+
+```
+x <- men(1:3)
+```
+
+#### fail 2  - "undefined x"
+
+```
+```
+
+#### fail 3 - "did you call mean?"
+
+```
+x <- 2
+```
+
+
+*** =instructions
+
+*** =hint
+
+*** =pre_exercise_code
+```{r}
+
+```
+
+*** =sample_code
+```{r}
+x <- mean(1:3)
+```
+
+*** =solution
+```{r}
+x <- mean(1:3)
+```
+
+*** =sct
+```{r}
+```
