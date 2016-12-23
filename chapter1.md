@@ -290,3 +290,37 @@ f <- function(a, b, c=1) sum(a + b, c)
 *** =sct
 ```{r}
 ```
+
+--- type:NormalExercise lang:r xp:100 skills:1 key:7839a0890c
+## Function Call
+
+#### pass 1 
+
+```
+lm(d$x ~ d$y)
+```
+
+#### pass 2
+
+```
+with(d, lm(x ~ y))
+```
+
+*** =pre_exercise_code
+```{r}
+d <- data.frame(x = 1:10, y = 11:20)
+```
+
+*** =sample_code
+```{r}
+lm(x ~ y, data=d)
+```
+
+*** =solution
+```{r}
+lm(x ~ y, data=d)
+```
+
+*** =sct
+```{r}
+```
