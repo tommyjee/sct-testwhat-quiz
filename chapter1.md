@@ -375,3 +375,30 @@ x <- mean(1:3)
 *** =sct
 ```{r}
 ```
+
+--- type:NormalExercise lang:r xp:100 skills:1 key:f02f67218b
+## Backend Trouble
+
+Use a testwhat function in the pre\_exercise\_code, to allow the solution to pass.
+
+*** =pre_exercise_code
+```{r}
+
+```
+
+*** =sample_code
+```{r}
+f <- function(a) stopifnot(a > 5)
+f(3)
+```
+
+*** =solution
+```{r}
+f <- function(a) stopifnot(a > 5)
+f(3)
+```
+
+*** =sct
+```{r}
+
+```
