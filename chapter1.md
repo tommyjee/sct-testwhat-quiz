@@ -27,7 +27,7 @@ x <- y <- zoo(1:3)
 print(y)
 ```
 
-#### fail 1 - "x is not class 'zoo'"
+#### fail 1 - "x is not correct"
 
 ```
 library(zoo)
@@ -43,7 +43,7 @@ print(x)
 library(zoo)
 ```
 
-#### fail 4 - "Expected [1,2,3] in your output"
+#### fail 4 - "Expected same output as `zoo(1:3)`"
 
 ```
 library(zoo)
@@ -121,8 +121,8 @@ pf("blue")
 
 *** =pre_exercise_code
 ```{r}
-f <- function(x)
-pf <- function(x)
+f <- function(x) NULL
+pf <- function(x) NULL
 ```
 
 *** =sample_code
