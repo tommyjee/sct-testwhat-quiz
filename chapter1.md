@@ -325,6 +325,53 @@ lm(x ~ y, data=d)
 ```{r}
 ```
 
+
+--- type:NormalExercise lang:r xp:100 skills:1 key:f033369188
+## Function Call (2)
+
+#### pass 1 - 
+
+```
+lapply(df, function(col) sum(col))
+```
+
+#### fail 1 - "missing first pos arg"
+
+```
+lapply(FUN=sum)
+```
+
+#### fail 2 - "incorrect first pos arg"
+
+```
+lapply(sum)
+```
+
+#### fail 3 - "missing second pos arg"
+
+```
+lapply(df)
+```
+
+
+*** =pre_exercise_code
+```{r}
+df <- data.frame(a = 1:10, b = 11:20)
+```
+
+*** =sample_code
+```{r}
+lapply(df, sum)
+```
+
+*** =solution
+```{r}
+lapply(df, sum)
+```
+
+*** =sct
+```{r}
+```
 --- type:NormalExercise lang:r xp:100 skills:1 key:2564475b6e
 ## Logic Test
 
