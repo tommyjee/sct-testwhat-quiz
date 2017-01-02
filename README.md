@@ -1,4 +1,19 @@
-# DataCamp Template Course
+# sct-testwhat-quiz
+
+This repo contains a number of R exercises, many of which are missing SCTs.
+Each exercise has a number of passing or failing submissions (shown below).
+Complete the missing SCTs to the best of your ability, so that each listed solution passes or fails appropriately, and with the correct feedback message.
+
+![](img/example_exercise.png)
+
+## How to Take the Quiz
+
+Simply fork this repo, and modify the exercises in the teach editor. 
+See the section below for directions on using the teach editor.
+
+----
+
+## DataCamp Template Course
 <a href=https://www.datacamp.com//teach/repositories/77178470/go target="_blank"><img src="https://s3.amazonaws.com/assets.datacamp.com/img/github/content-engineering-repos/course_button.png" width="150"></a>
 <a href=https://www.datacamp.com//teach/repositories target="_blank"><img src="https://s3.amazonaws.com/assets.datacamp.com/img/github/content-engineering-repos/dashboard_button.png" width="150"></a>
 
