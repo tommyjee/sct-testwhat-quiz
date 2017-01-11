@@ -37,13 +37,13 @@ x = c(1,2,3)
 print(x)
 ```
 
-#### fail 3 - "x is undefined"
+#### fail 2 - "x is undefined"
 
 ```
 library(zoo)
 ```
 
-#### fail 4 - "Expected same output as `zoo(1:3)`"
+#### fail 3 - "Expected same output as `zoo(1:3)`"
 
 ```
 library(zoo)
