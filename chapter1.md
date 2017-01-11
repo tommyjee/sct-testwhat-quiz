@@ -106,7 +106,7 @@ f('b')
 (f("b"))
 ```
 
-#### fail 1 - "should call f('blue') or f('b')
+#### fail 1 - "should call f('blue') or f('b')"
 
 ```
 f("blueberry")
