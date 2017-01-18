@@ -466,6 +466,7 @@ x <- mean(1:3)
 
 *** =sct
 ```{r}
+# Need more time
 test_correct({
     test_expression_result("x")
     test_function("mean", "x")
